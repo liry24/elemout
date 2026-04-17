@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+@plugin 'daisyui' {
+    themes:
+        light --default,
+        dark --prefersdark;
+}
+@plugin 'daisyui/theme' {
+    name: 'neu';
+    default: false;
+    prefersdark: false;
+    color-scheme: 'dark';
+    --color-base-100: oklch(20.84% 0.008 17.911);
+    --color-base-200: oklch(18.522% 0.007 17.911);
+    --color-base-300: oklch(16.203% 0.007 17.911);
+    --color-base-content: oklch(83.768% 0.001 17.911);
+    --color-primary: oklch(98% 0 0);
+    --color-primary-content: oklch(14% 0 0);
+    --color-secondary: oklch(69.776% 0.135 168.327);
+    --color-secondary-content: oklch(13.955% 0.027 168.327);
+    --color-accent: oklch(70.628% 0.119 185.713);
+    --color-accent-content: oklch(14.125% 0.023 185.713);
+    --color-neutral: oklch(37% 0 0);
+    --color-neutral-content: oklch(92% 0 0);
+    --color-info: oklch(72.06% 0.191 231.6);
+    --color-info-content: oklch(0% 0 0);
+    --color-success: oklch(64.8% 0.15 160);
+    --color-success-content: oklch(0% 0 0);
+    --color-warning: oklch(84.71% 0.199 83.87);
+    --color-warning-content: oklch(0% 0 0);
+    --color-error: oklch(71.76% 0.221 22.18);
+    --color-error-content: oklch(0% 0 0);
+    --radius-selector: 0.5rem;
+    --radius-field: 0.5rem;
+    --radius-box: 1rem;
+    --size-selector: 0.28125rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    margin: 0;
+}
+
+@layer utilities {
+    .rounded-xs {
+        border-radius: var(--radius-xs);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 0.25rem;
+        }
+    }
+    .rounded-sm {
+        border-radius: var(--radius-sm);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 0.5rem;
+        }
+    }
+    .rounded-md {
+        border-radius: var(--radius-md);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 0.75rem;
+        }
+    }
+    .rounded-lg {
+        border-radius: var(--radius-lg);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 1rem;
+        }
+    }
+    .rounded-xl {
+        border-radius: var(--radius-xl);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 1.5rem;
+        }
+    }
+    .rounded-2xl {
+        border-radius: var(--radius-2xl);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 2rem;
+        }
+    }
+    .rounded-3xl {
+        border-radius: var(--radius-3xl);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 2.5rem;
+        }
+    }
+    .rounded-4xl {
+        border-radius: var(--radius-4xl);
+        @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+            corner-shape: squircle;
+            border-radius: 3rem;
+        }
+    }
+}

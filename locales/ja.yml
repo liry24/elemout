@@ -1,0 +1,225 @@
+extDescription: ウェブページの不要な要素を非表示にするツール
+
+home:
+    enableHiding: 非表示を有効にする
+    clearSelection: 選択を解除
+    selectedCount: '$1 件選択中'
+    stopSelection: 選択を停止
+    selectElement: 要素を選択
+    openHttpPage: http / https ページを開いてください
+    noHiddenElements: 非表示にした要素はありません
+    summary: '$1 要素 / $2 ルール'
+
+element:
+    restore: 要素を復元
+    select: '$1 を選択'
+    moreActions: '$1 の操作'
+    copySelector: セレクタをコピー
+
+rules:
+    back: 戻る
+    addRule: ルールを追加
+    newRule: 新しいルール
+    unnamed: 名前なし
+    editRule: ルールを編集
+    edit: 編集
+    delete: 削除
+    convertToRule: ルール化
+    moreActions: '$1 の操作'
+    toggleRule: '$1 を切り替え'
+    form:
+        label: ラベル（任意）
+        labelPlaceholder: 例：広告を非表示
+        sitePattern: URLパターン（ホスト名）
+        sitePatternGlobHint: 'example.com, *.example.com, *'
+        sitePatternRegexHint: '^example\.(com|net)$'
+        useRegex: 正規表現を使用
+        selectors: CSSセレクタ
+        selectorHelpButton: CSSセレクタの構文を確認
+        selectorPlaceholder: '[id^="prefix-"], .class, #id, div > p'
+        addSelector: セレクタを追加
+        removeSelector: セレクタを削除
+        applyOptimization: 適用
+        save: 保存
+        cancel: キャンセル
+        errorPattern: サイトパターンを入力してください
+        errorPatternTooLong: サイトパターンが長すぎます
+        errorInvalidRegex: 正規表現の構文が正しくありません
+        errorUnsafeRegex: この正規表現は複雑すぎるため使用できません
+        errorSelectors: セレクタを１つ以上入力してください
+        errorTooManySelectors: セレクタが多すぎます
+        errorSelectorTooLong: セレクタが長すぎます
+        errorInvalidSelector: CSSセレクタの構文が正しくありません
+
+github:
+    backedUp: Gist にバックアップしました
+    synced: Gist に同期しました
+    syncedFrom: Gist から同期しました
+    loggedIn: GitHubにログインしました
+    conflictResolved: 競合を解決して同期しました
+    operationFailed: 操作に失敗しました
+
+jsonIo:
+    exported: エクスポートしました
+    exportFailed: エクスポートに失敗しました
+    fileReadFailed: ファイルの読み込みに失敗しました
+    invalidFormat: ファイルの形式が正しくありません
+    imported: インポートしました
+    importFailed: インポートに失敗しました
+
+selectionMode:
+    title: 非表示にする要素を選択してください
+    click: クリック
+    hideElement: 要素を非表示
+    wheelUp: 'ホイール ↑'
+    parentElement: 親要素に移動
+    wheelDown: 'ホイール ↓'
+    childElement: 子要素に移動
+    scrollToggle: '$1  スクロールモード切替'
+    scrollActive: '$1  スクロールモード中'
+    exit: 'Esc  終了'
+
+notification:
+    syncConflictTitle: 同期の競合
+    syncConflictMessage: 拡張機能を開いて競合を解決してください
+
+contextMenu:
+    hideElement: 要素を選択して非表示にする
+
+settings:
+    title: 設定
+    openSettings: 設定を開く
+    version: 'バージョン: $1'
+    donate: 支援
+    openRepository: リポジトリを開く
+    data: データ
+    backupTitle: バックアップを作成
+    backupDesc: Gist互換のZIP形式でバックアップできます。
+    backupSettingsOmitted: このバックアップには設定が含まれていません。
+    import: インポート
+    export: エクスポート
+    behavior: 設定
+    wheelInvert: ホイール方向を反転
+    wheelInvertDesc: 選択モードでホイール操作の親子要素選択方向を入れ替えます
+    wheelDeadzone: ホイール操作中のデッドゾーン
+    wheelDeadzoneDesc: ホイール操作開始地点から一定距離内は選択モードを維持します
+    includeSettingsInSync: 同期・バックアップに設定を含める
+    includeSettingsInSyncDesc: Gist同期やJSONエクスポート時に動作設定を含めます
+    scrollModeKey: スクロールモード切替キー
+    scrollModeKeyDesc: '選択モード中にスクロールモードを切り替えるキー（デフォルト: S）'
+    selectionStartKey: 選択モード起動ショートカット
+    selectionStartKeyDesc: '選択モードを起動するグローバルショートカット（例: Alt+H）'
+    keyInput:
+        pressKey: キーを押してください…
+        none: なし
+        clear: クリア
+    developer: 開発者
+    showSelectorPreview: セレクタプレビューを表示
+    showSelectorPreviewDesc: 選択モードのハイライト下にCSSセレクタ文字列をプレビューします
+    github:
+        label: GitHub
+        loginWithGithub: GitHubでログイン
+        loginWithGithubDesc: GitHub Gistで非表示要素を同期します
+        errorAuthRequired: GitHub へのログインが必要です。
+        errorLoginFailed: GitHub ログインに失敗しました。
+        errorUserInfoFailed: GitHub アカウント情報の取得に失敗しました。
+        login: ログイン
+        openGist: Gist を開く
+        sync: 同期
+        gistBackup: Gist バックアップ
+        gistBackupDesc: データを自動同期します
+        syncConflict: 同期の競合
+        syncConflictDesc: ローカルと Gist の内容が異なります。どちらを使用するか選択してください。
+        local: ローカル
+        gist: Gist
+        stats: $1 サイト / $2 要素
+        useLocal: ローカルを使用
+        useLocalDesc: Gist をローカルで上書き
+        useGist: Gist を使用
+        useGistDesc: ローカルを Gist で上書き
+        merge: マージ
+        mergeDesc: 両方の要素を保持して統合
+        logout: ログアウト
+        changeGist: Gist を変更
+        selectGist: Gist を選択
+        selectGistDesc: 既存の Gist が見つかりました。使用する Gist を選択するか、新規作成してください。
+        useThisGist: この Gist を使用
+        createNewGist: 新規 Gist を作成
+        manualGistId: Gist ID を入力
+        applyGistId: 適用
+        noGistsFound: Gist が見つかりません
+        updatedAt: '更新日: $1'
+    deviceLogin:
+        instruction: GitHubの認証ページを開き、以下のコードを入力してください。
+        copied: コピーしました
+        copyCode: コードをコピー
+        openInGithub: GitHubで開く
+        cancel: キャンセル
+        waitingForApproval: 承認を待っています…
+    importMode:
+        title: インポート方法を選択
+        question: 既存のデータをどのように扱いますか？
+        merge: マージ
+        mergeDesc: 既存データを保持して追加
+        replace: 上書き
+        replaceDesc: 既存データを削除して置き換え
+        cancel: キャンセル
+
+help:
+    title: CSS セレクタ リファレンス
+    description: Elemout のルールで使用できる CSS セレクタ構文の一覧です。
+    copySelector: セレクタをコピー
+    copiedSelector: セレクタをコピーしました
+    table:
+        syntax: 構文
+        description: 説明
+        example: 例
+    sections:
+        basic:
+            title: 基本セレクタ
+            items:
+                id: id 属性が一致する要素
+                class: class 属性を持つ要素
+                element: 指定したタグ名の要素
+                all: すべての要素
+        attribute:
+            title: 属性セレクタ
+            items:
+                present: attr 属性を持つ要素
+                exact: attr が val に完全一致
+                startsWith: attr が prefix で始まる（前方一致）
+                endsWith: attr が suffix で終わる（後方一致）
+                contains: attr が str を含む（部分一致）
+                word: attr がスペース区切りのリストに word を含む
+        combinator:
+            title: 結合子
+            items:
+                descendant: A の子孫にある B
+                child: A の直下の子 B
+                adjacent: A の直後の兄弟 B
+                siblings: A より後ろのすべての兄弟 B
+                group: A または B（複数まとめて指定）
+        pseudo:
+            title: 疑似クラス
+            items:
+                firstChild: 親要素の最初の子
+                lastChild: 親要素の最後の子
+                nthChild: 親要素の n 番目の子
+                not: 指定セレクタに一致しない要素
+                empty: 子要素も内容も持たない要素
+                has: 指定セレクタを子孫に持つ要素
+    examples:
+        title: 実用例
+        items:
+            prefix:
+                title: ID がプレフィックスで始まる要素をまとめて非表示
+                description: id が "ad-" で始まるすべての要素を対象にします。
+            classContains:
+                title: クラスに "ad" を含む要素をまとめて非表示
+                description: class 属性に "ad" という文字列を含む要素をすべて対象にします。
+            dataAttribute:
+                title: data 属性でマークされた要素を非表示
+                description: data-sponsored 属性を持つ要素をすべて対象にします。
+            multiple:
+                title: 複数の条件をまとめて指定
+                description: カンマ区切りで複数のセレクタを 1 つのルールとして登録できます。

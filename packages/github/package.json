@@ -1,0 +1,16 @@
+{
+    "name": "@repo/github",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "exports": {
+        ".": "./src/index.ts",
+        "./module": "./src/module.ts"
+    },
+    "peerDependencies": {
+        "@octokit/auth-oauth-device": "*",
+        "@vueuse/core": "*",
+        "vue": "*",
+        "wxt": "*"
+    }
+}

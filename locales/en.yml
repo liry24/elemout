@@ -1,0 +1,225 @@
+extDescription: Tool to hide unwanted elements on web pages
+
+home:
+    enableHiding: Enable hiding
+    clearSelection: Clear selection
+    selectedCount: '$1 selected'
+    stopSelection: Stop selection
+    selectElement: Select element
+    openHttpPage: Please open an http/https page
+    noHiddenElements: No hidden elements
+    summary: '$1 elements / $2 rules'
+
+element:
+    restore: Restore element
+    select: 'Select $1'
+    moreActions: 'More actions for $1'
+    copySelector: Copy selector
+
+rules:
+    back: Back
+    addRule: Add Rule
+    newRule: New Rule
+    unnamed: Unnamed
+    editRule: Edit Rule
+    edit: Edit
+    delete: Delete
+    convertToRule: Convert to Rule
+    moreActions: 'More actions for $1'
+    toggleRule: 'Toggle $1'
+    form:
+        label: Label (optional)
+        labelPlaceholder: 'e.g. Hide ads'
+        sitePattern: URL pattern (hostname)
+        sitePatternGlobHint: 'example.com, *.example.com, *'
+        sitePatternRegexHint: '^example\.(com|net)$'
+        useRegex: Use regular expression
+        selectors: CSS selectors
+        selectorHelpButton: CSS selector reference
+        selectorPlaceholder: '[id^="prefix-"], .class, #id, div > p'
+        addSelector: Add selector
+        removeSelector: Remove selector
+        applyOptimization: Apply
+        save: Save
+        cancel: Cancel
+        errorPattern: Please enter a site pattern
+        errorPatternTooLong: The site pattern is too long
+        errorInvalidRegex: The regular expression is invalid
+        errorUnsafeRegex: This regular expression is too complex to allow
+        errorSelectors: Please enter at least one selector
+        errorTooManySelectors: Too many selectors were provided
+        errorSelectorTooLong: A selector is too long
+        errorInvalidSelector: The CSS selector syntax is invalid
+
+github:
+    backedUp: Backed up to Gist
+    synced: Synced to Gist
+    syncedFrom: Synced from Gist
+    loggedIn: Logged in to GitHub
+    conflictResolved: Conflict resolved and synced
+    operationFailed: Operation failed
+
+jsonIo:
+    exported: Exported successfully
+    exportFailed: Export failed
+    fileReadFailed: Failed to read file
+    invalidFormat: Invalid file format
+    imported: Imported successfully
+    importFailed: Import failed
+
+selectionMode:
+    title: Select an element to hide
+    click: Click
+    hideElement: Hide element
+    wheelUp: 'Wheel ↑'
+    parentElement: Move to parent
+    wheelDown: 'Wheel ↓'
+    childElement: Move to child element
+    scrollToggle: '$1  Toggle scroll mode'
+    scrollActive: '$1  Scroll mode active'
+    exit: 'Esc  Exit'
+
+notification:
+    syncConflictTitle: Sync Conflict
+    syncConflictMessage: Open the extension to resolve the conflict
+
+contextMenu:
+    hideElement: Select element to hide
+
+settings:
+    title: Settings
+    openSettings: Open settings
+    version: 'Version: $1'
+    donate: Donate
+    openRepository: Open repository
+    data: Data
+    backupTitle: Create Backup
+    backupDesc: Back up your data in a Gist-compatible ZIP archive.
+    backupSettingsOmitted: This backup does not include settings.
+    import: Import
+    export: Export
+    behavior: Settings
+    wheelInvert: Invert wheel direction
+    wheelInvertDesc: Swap parent/child selection direction when using the scroll wheel in selection mode
+    wheelDeadzone: Wheel deadzone
+    wheelDeadzoneDesc: Maintains selected element within a fixed distance from where the wheel was used
+    includeSettingsInSync: Include settings in sync & backup
+    includeSettingsInSyncDesc: Includes behavior settings when syncing to Gist or exporting JSON
+    scrollModeKey: Scroll mode toggle key
+    scrollModeKeyDesc: 'Key to toggle scroll mode while in selection mode (default: S)'
+    selectionStartKey: Selection mode shortcut key
+    selectionStartKeyDesc: 'Global shortcut key to start selection mode (e.g. Alt+H).'
+    keyInput:
+        pressKey: Press a key…
+        none: None
+        clear: Clear
+    developer: Developer
+    showSelectorPreview: Show selector preview
+    showSelectorPreviewDesc: Preview the CSS selector string below the highlight in selection mode
+    github:
+        label: GitHub
+        loginWithGithub: Login with GitHub
+        loginWithGithubDesc: Sync hidden elements with GitHub Gist
+        errorAuthRequired: GitHub login is required.
+        errorLoginFailed: GitHub login failed.
+        errorUserInfoFailed: Failed to retrieve GitHub account information.
+        login: Login
+        openGist: Open Gist
+        sync: Sync
+        gistBackup: Gist Backup
+        gistBackupDesc: Auto-sync data
+        syncConflict: Sync Conflict
+        syncConflictDesc: Local and Gist data differ. Select which to use.
+        local: Local
+        gist: Gist
+        stats: $1 sites / $2 elements
+        useLocal: Use Local
+        useLocalDesc: Overwrite Gist with local
+        useGist: Use Gist
+        useGistDesc: Overwrite local with Gist
+        merge: Merge
+        mergeDesc: Keep and integrate both elements
+        logout: Log out
+        changeGist: Change Gist
+        selectGist: Select Gist
+        selectGistDesc: Found existing Gists. Select one or create a new one.
+        useThisGist: Use this Gist
+        createNewGist: Create new Gist
+        manualGistId: Enter Gist ID
+        applyGistId: Apply
+        noGistsFound: No Gists found
+        updatedAt: 'Updated: $1'
+    deviceLogin:
+        instruction: Open GitHub authentication page and enter the code below.
+        copied: Copied
+        copyCode: Copy code
+        openInGithub: Open in GitHub
+        cancel: Cancel
+        waitingForApproval: Waiting for approval…
+    importMode:
+        title: Select import method
+        question: How should existing data be handled?
+        merge: Merge
+        mergeDesc: Keep existing data and add
+        replace: Replace
+        replaceDesc: Delete existing data and replace
+        cancel: Cancel
+
+help:
+    title: CSS Selector Reference
+    description: Reference for the CSS selector syntax available in Elemout rules.
+    copySelector: Copy selector
+    copiedSelector: Selector copied
+    table:
+        syntax: Syntax
+        description: Description
+        example: Example
+    sections:
+        basic:
+            title: Basic selectors
+            items:
+                id: Element with a matching id attribute
+                class: Element with the specified class
+                element: Element with the specified tag name
+                all: All elements
+        attribute:
+            title: Attribute selectors
+            items:
+                present: Element that has the attribute
+                exact: Attribute exactly matches the value
+                startsWith: Attribute starts with the value
+                endsWith: Attribute ends with the value
+                contains: Attribute contains the value
+                word: Attribute contains the word in a space-separated list
+        combinator:
+            title: Combinators
+            items:
+                descendant: B that exists anywhere inside A
+                child: B that is a direct child of A
+                adjacent: B that immediately follows A
+                siblings: All B siblings that come after A
+                group: A or B as a combined selector list
+        pseudo:
+            title: Pseudo-classes
+            items:
+                firstChild: First child of the parent element
+                lastChild: Last child of the parent element
+                nthChild: nth child of the parent element
+                not: Element that does not match the selector
+                empty: Element with no children or content
+                has: Element that contains a descendant matching the selector
+    examples:
+        title: Practical examples
+        items:
+            prefix:
+                title: Hide elements whose IDs share a prefix
+                description: Targets every element whose id starts with "ad-".
+            classContains:
+                title: Hide elements whose class contains "ad"
+                description: Targets every element whose class attribute contains the text "ad".
+            dataAttribute:
+                title: Hide elements marked by a data attribute
+                description: Targets every element that has the data-sponsored attribute.
+            multiple:
+                title: Combine multiple conditions in one rule
+                description: You can register multiple selectors as a single rule by separating them with commas.
