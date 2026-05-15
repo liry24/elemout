@@ -1,6 +1,6 @@
 {
     "name": "elemout",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "private": true,
     "description": "Tool to hide unwanted elements on web pages",
     "author": {
@@ -55,7 +55,7 @@
         "daisyui": "^5.5.19",
         "oxfmt": "^0.49.0",
         "oxlint": "^1.64.0",
-        "taze": "^19.11.0",
+        "taze": "^19.12.0",
         "typescript": "6.0.3",
         "vitest": "^4.1.6",
         "vue-tsc": "^3.2.9",
