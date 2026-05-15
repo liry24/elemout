@@ -28,7 +28,7 @@ export default defineConfig({
         description: '__MSG_extDescription__',
         default_locale: 'en',
         permissions: ['storage', 'tabs', 'sidePanel', 'contextMenus', 'notifications'],
-        host_permissions: ['<all_urls>'],
+        host_permissions: ['*://*/*'],
         browser_specific_settings: {
             gecko: {
                 data_collection_permissions: {
